@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../index.js';
-import { IonIcon } from '@ionic/react';
+import { Clock } from 'lucide-react';
 
 function truncateText(text, maxSentences) {
     const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
@@ -61,9 +61,9 @@ export default function ListKonten() {
             key={index}
           >
             <h3 className="titekntn"><b>{task.Title}</b></h3>
-            <p>{truncateText(task.About, 1)}</p>
+            <p>{truncateText(task.About, 2)}</p>
             <div className="deadline">
-              <IonIcon name="time"></IonIcon>
+              <Clock/>
               <span> Deadline: {new Date(task.Deadline).toLocaleString()}</span>
             </div>
           </section>

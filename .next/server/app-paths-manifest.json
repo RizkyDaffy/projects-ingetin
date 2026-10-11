@@ -1,0 +1,6 @@
+{
+  "/api/task/route": "app/api/task/route.js",
+  "/page": "app/page.js",
+  "/semua/page": "app/semua/page.js",
+  "/buat/page": "app/buat/page.js"
+}
